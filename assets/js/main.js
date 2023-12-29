@@ -264,3 +264,50 @@
   });
 
 })()
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   // Get the video element
+//   const videoLoader = document.getElementById('loader-video');
+
+//   // Play the video when it's loaded
+//   videoLoader.addEventListener('loadeddata', function() {
+//     videoLoader.play();
+//   });
+
+//   // Pause the video when the content is fully loaded
+//   window.addEventListener('load', function() {
+//     videoLoader.pause();
+//     // Hide the loader or perform any other actions as needed
+//     // For example, you can fade out the loader element
+//     const loaderContainer = document.querySelector('.loader-container');
+//     loaderContainer.style.opacity = '0';
+//     setTimeout(() => {
+//       loaderContainer.style.display = 'none';
+//     }, 500); // Fade out duration in milliseconds
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const loaderContainer = document.getElementById('loader-container');
+
+  // Show loader
+  function showLoader() {
+    loaderContainer.style.display = 'flex';
+  }
+
+  // Hide loader
+  function hideLoader() {
+    loaderContainer.style.display = 'none';
+  }
+
+  // Simulating loading time with setTimeout (remove this in a real application)
+  // Call showLoader to display the loader
+  showLoader();
+
+  // Simulating some process that takes time
+  setTimeout(() => {
+    // After the process completes, call hideLoader to hide the loader
+    hideLoader();
+  }, 3000); // Simulated loading time in milliseconds
+});
+

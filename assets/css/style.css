@@ -35,6 +35,157 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Loader
+--------------------------------------------------------------*/
+/* 
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+#loader {
+  background-image: url("\assets\img/logo\ anime.mp4");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  width: 100px;
+} */
+
+/* body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+} */
+
+/* body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.loader-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.loader-img {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.loader-img {
+  width: 100px; /
+  height: 100px;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.loader-img {
+  width: 100px; 
+  height: 100px;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.loader-img {
+  width: 600px; 
+  height: 600px;
+  /* animation: motion 2s ease-in-out infinite alternate; */
+}
+
+@keyframes motion {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50px); /* Adjust the motion distance as needed */
+  }
+}
+
+/*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
@@ -197,7 +348,8 @@ h6 {
 } */
 
 #topbar {
-  background: #fbfbfb;
+  /* background: #fbfbfb; */
+  background: #66a346;
   /* font-size: 20px; */
   height: 100px;
   padding: 0;
@@ -209,18 +361,21 @@ h6 {
 }
 
 .para {
+  font: #000000;
   font-size: 55px;
-  letter-spacing: 35px;
+  letter-spacing: 10px;
   text-decoration-line: underline;
-  text-decoration-color: #66a346;
+  text-decoration-color: hsl(0, 0%, 97%);
   text-decoration-thickness: 5px;
   white-space: nowrap; /* Ensures text stays in one line */
 }
-
+b, .para{
+  display: inline;
+}
 .animated-text {
   position: relative;
   display: inline-block; /* Ensures animation works */
-  animation: moveLeft 5s linear infinite; /* Adjust animation duration */
+  animation: moveLeft 35s linear infinite; /* Adjust animation duration */
   width: 100vw; /* Set width to full viewport width */
   text-align: right; /* Start from the left side */
   /* animation-direction: alternate; Alternate animation direction */
@@ -301,8 +456,8 @@ h6 {
 
 #header .logo img {
   /* max-height: 40px; */
-  max-height: 100px;
-  max-width: 100px;
+  max-height: 150px;
+  max-width: 150px;
 }
 
 .scrolled-offset {
@@ -329,6 +484,7 @@ h6 {
 
 .navbar li {
   position: relative;
+  padding-bottom: 50px;
 }
 
 .navbar a,
@@ -337,11 +493,11 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 20px;
+  font-size: 50px;
   color: #222222;
   white-space: nowrap;
   transition: 0.3s;
-}
+}.navbar-mobile
 
 .navbar a i,
 .navbar a:focus i {
@@ -442,7 +598,7 @@ h6 {
 */
 .mobile-nav-toggle {
   color: #222222;
-  font-size: 28px;
+  font-size: 35px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -450,9 +606,15 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: #000000;
+  font-size: 40px;
 }
-
+.mobile-nav-toggle {
+  display: block;
+}
+.navbar ul {
+  display: none;
+}
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
@@ -466,11 +628,12 @@ h6 {
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
-  top: 0;
+  top: 15px;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(9, 9, 9, 0.9);
+  background: rgba(9, 9, 9, 0);
+  /* background: rgba(255 255 255 / 50%); */
   transition: 0.3s;
   z-index: 999;
 }
@@ -489,22 +652,31 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: #66a346;
   overflow-y: auto;
   transition: 0.3s;
 }
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #222222;
+  padding-top: 55px;
+  /* color: #222222; */
+  color: #fff;
+  font-size: 130px;
+  position: relative;
+  margin-top: -10px;
+  margin-bottom: 0px;
+  display: inline-block;
+  /* padding-bottom: 54px;
+  padding-top: 54px; */
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #66a346;
+  /* color: #66a346; */
+  color: #000000;
 }
 
 .navbar-mobile .getstarted,
@@ -665,7 +837,7 @@ h6 {
 }
 
 .green_color{
-  color: #66a346;
+  color: #66a346;bg
 }
 .underline1{
   text-decoration-line: underline;
@@ -743,7 +915,8 @@ section {
 }
 
 .section-bg {
-  background-color: #f8fcf9;
+  /* background-color: #f8fcf9; */
+  background-color: #000000;
 }
 
 .section-title {
@@ -791,6 +964,9 @@ section {
 /*--------------------------------------------------------------
 # Featured Services
 --------------------------------------------------------------*/
+.feature-font{
+  font-size: 25px;
+}
 .featured-services {
   padding: 20px 0;
 }
@@ -827,13 +1003,18 @@ section {
   color: #66a346;
 }
 
-.featured-services .description {
+.featured-services .description {ut
   line-height: 24px;
   font-size: 14px;
 }
 
 .feature{
   text-decoration-line: underline;
+}
+.image {
+  width: 200px; /* Set a specific width */
+  /* OR */
+  height: 150px; /* Set a specific height */
 }
 /*--------------------------------------------------------------
 # About Us
@@ -863,7 +1044,16 @@ section {
 }
 
 .about .pabout{
-  font-size: 25px;
+  font-size: 50px;
+  padding-top: 40px;
+}
+.about .abouti{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about .img1{
+  width: 1190px;
 }
 
 /*--------------------------------------------------------------

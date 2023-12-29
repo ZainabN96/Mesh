@@ -10,7 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <link href="assets/img/mesh.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -37,7 +38,21 @@
 </head>
 
 <body>
-
+  <!-- <div class="loader-container">
+    <div class="loader"></div>
+  </div> -->
+  <!-- <div class="loader-container">
+    <video id="loader-video" autoplay loop muted playsinline>
+      <source src="assets/img/logo anime.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>  -->
+  <div class="loader-container" id="loader-container">
+    <img src="assets/img/logo anime_1.gif" alt="Loading..." class="loader-img">
+  </div> 
+  <!-- <div class="loader-container" id="loader-container">
+    <img src="assets/img/mesh.png" alt="Loading..." class="loader-img">
+  </div> -->
   <!-- ======= Top Bar ======= -->
   <!-- <section id="topbar" class="align-items-center">
     <div class="container-fluid mt-4 ">
@@ -46,19 +61,13 @@
           </pre>
         </p>
     </div> -->
-    <section id="topbar">
+    <!-- <section id="topbar">
       <div class="container-fluid">
         <p class="para animated-text">
           LET US <span class="green_color">GREEN</span> YOUR SPACE
-          <!-- <ul class="">
-            <li class="nav-link para li"> </li>
-            <li class="nav-link para li"> LET US <span class="green_color">GREEN</span> YOUR SPACE</li>
-            <li class="nav-link para li"> LET US <span class="green_color">GREEN</span> YOUR SPACE</li>
-          </ul> -->
         </p>
-        
       </div>
-    </section>
+    </section> -->
     
   <!-- <section id="topbar" class="container-fluid mt-">
     
@@ -89,7 +98,7 @@
       <!-- <h1 class="logo me-auto"><a href="index.html">Green</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
       <a href="index.html" class="logo me-auto"><img src="assets/img/Logo2.png" alt="" class="img-fluid"></a>
-
+      <i class="bi bi-list mobile-nav-toggle text-center">
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -117,8 +126,8 @@
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
+    </i>
 
     </div>
   </header><!-- End Header -->
@@ -127,12 +136,12 @@
   <section id="hero">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+      <!-- <ol class="carousel-indicators" id="hero-carousel-indicators"></ol> -->
 
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active bg-dark" >
+        <!-- <div class="carousel-item active bg-dark" >
           <div class="carousel-container">
             <div class="container">
               <div class="row">
@@ -145,16 +154,15 @@
                   </h2>
                 </div>
               </div>
-              <!-- <h2 class="animate__animated animate__fadeInDown underline"><pre>   LET US <span class="green_color">GREEN</span> YOUR SPACE   </pre></h2> -->
-              <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+              <h2 class="animate__animated animate__fadeInDown underline"><pre>   LET US <span class="green_color">GREEN</span> YOUR SPACE   </pre></h2>
+              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
           </div>
         </div>
-        
-
+         -->
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide1.jpeg)">
+        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide1.jpeg)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown text-dark">WELCOME TO THE WORLD OF SMART AND SUSTAINABLE BUILT SPACES</h2>
@@ -174,14 +182,14 @@
         </div> -->
 
       </div>
-
+<!-- 
       <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
       </a>
 
       <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
         <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
+      </a> -->
 
     </div>
   </section><!-- End Hero -->
@@ -190,10 +198,10 @@
 
     <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services section-bg">
-      <div class="container">
+      <div class="container text-light feature-font">
         <br>
         <p>
-          <strong class="feature">LET US IMAGINE</strong> a built space where you can plan how to optimize the consumption of your resources - without compromising on convenience and comfort -  be it electricity, water, air quality, audiovisual or any other sensory experience.
+          <strong class="feature"> LET US IMAGINE</strong> a built space where you can plan how to optimize the consumption of your resources - without compromising on convenience and comfort -  be it electricity, water, air quality, audiovisual or any other sensory experience.
         </p>
         <p>
           You walk in and the lights & temperature adjust according to your mood; music plays; doors lock; groceries ordered from your kitchen appliances; plants are watered; access is controlled; curtains drawn; and the list goes on…..
@@ -229,20 +237,33 @@
     </section>
     <!-- End Featured Services Section -->
 
+    <section id="topbar">
+      <div class="container-fluid">
+        <div >
+          <b class="para animated-text">LET US <span class="text-light">GREEN</span> YOUR SPACE</b>
+          <!-- <b class="para animated-text">LET US <span class="text-light">GREEN</span> YOUR SPACE</b>
+          <b class="para animated-text">LET US <span class="text-light">GREEN</span> YOUR SPACE</b>
+          <b class="para animated-text">LET US <span class="text-light">GREEN</span> YOUR SPACE</b> -->
+         
+          <!-- LET US <span class="text-light">GREEN</span> YOUR SPACE LET US <span class="text-light">GREEN</span> YOUR SPACE -->
+        </div>
+      </div>
+    </section>
+
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
-      <div class="container">
+      <div class="container-fluid">
 
         <div class="section-title">
           <h2>About Us</h2>
           <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/about2.png" class="img-fluid" alt="">
+        <div class="abouti">
+          <div class="col-lg-12 order-1 order-lg-2">
+            <img src="assets/img/service/eco.jpeg" class="img-fluid img1" alt="">
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          <div class="col-lg-12 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <!-- <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3> -->
             <p class="fst-italic pabout">
               Mansoor and Tania co-founded Mesh Mavens in 2023 in U.A.E. Working with and for giant technology companies in the region, both have cumulatively   garnered over  25 years of deep understanding of the tech landscape in the GCC.
@@ -349,19 +370,101 @@
           <h2>Services</h2>
           <p>Our prime focus is using sustainable and ethical technology to impact our built world. Based on years of research and development, we have carefully curated the following Services and Product offerings:</p>
         </div>
-
         <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img class="image" src="assets/img/service/home control.png" alt="">
+              <h4><a href="">SECURITY & SAFETY </a></h4>
+              <ol type="a" class="text-start">
+                <li>Access Control</li>
+                <li>Integrated cameras</li>
+                <li>Smart Locks</li>
+                <li>Water and Gas Leakage Sensors</li>
+                <li>Pool Safety</li>
+              </ol>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img class="image" src="assets/img/service/bulb.jpg" alt="">
+              <h4><a href="">ENERGY </a></h4>
+              <ol type="a" class="text-start">
+                <li>Smart Thermostats</li>
+                <li>Smart Curtains</li>
+                <li>Climate Control</li>
+                <li>Smart Lighting</li>
+              </ol>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img class="image" src="assets/img/service/living room.png" alt="">
+              <h4><a href="">CONVEINIENCE </a></h4>
+              <ol type="a" class="text-start">
+                <li>Mesh Internet</li>
+                <li>Multiroom Audio Visual Entertainment</li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/service/bulb.jpg" alt="">
+              <h4><a href="">ENERGY </a></h4>
+              <ol type="a" class="text-start">
+                <li>Smart Thermostats</li>
+                <li>Smart Curtains</li>
+                <li>Climate Control</li>
+                <li>Smart Lighting</li>
+              </ol>
+               <h4>Sarah Jhinson</h4>
+              <span>Product Manager</span>
+              <p>
+                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div> 
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/service/living room.png" alt="">
+              <h4><a href="">CONVEINIENCE </a></h4>
+              <ol type="a" class="text-start">
+                <li>Mesh Internet</li>
+                <li>Multiroom Audio Visual Entertainment</li>
+              </ol>
+               <h4>William Anderson</h4>
+              <span>CTO</span>
+              <p>
+                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a> 
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <img src="assets/img/service/home control.png" alt="">
               <h4><a href="">SECURITY & SAFETY </a></h4>
-                <ol type="a" class="text-start">
-                  <li>Access Control</li>
-                  <li>Integrated cameras</li>
-                  <li>Smart Locks</li>
-                  <li>Water and Gas Leakage Sensors</li>
-                  <li>Pool Safety</li>
-                </ol>
+              <ol type="a" class="text-start">
+                <li>Access Control</li>
+                <li>Integrated cameras</li>
+                <li>Smart Locks</li>
+                <li>Water and Gas Leakage Sensors</li>
+                <li>Pool Safety</li>
+              </ol>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
@@ -386,7 +489,7 @@
               </ol>
             </div>
           </div>
-        </div>
+        </div> -->
           <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div >
