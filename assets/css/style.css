@@ -837,7 +837,7 @@ b, .para{
 }
 
 .green_color{
-  color: #66a346;bg
+  color: #66a346;
 }
 .underline1{
   text-decoration-line: underline;
@@ -1003,7 +1003,7 @@ section {
   color: #66a346;
 }
 
-.featured-services .description {ut
+.featured-services .description {
   line-height: 24px;
   font-size: 14px;
 }
@@ -1048,12 +1048,12 @@ section {
   padding-top: 40px;
 }
 .about .abouti{
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .about .img1{
-  width: 1190px;
+  width: 1219px;
 }
 
 /*--------------------------------------------------------------
