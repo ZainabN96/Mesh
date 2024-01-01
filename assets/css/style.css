@@ -431,7 +431,7 @@ b, .para{
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  height: 117px;
+  height: 108px;
   
 }
 
@@ -457,9 +457,9 @@ b, .para{
 
 #header .logo img {
   /* max-height: 40px; */
-  max-height: 290px;
-  max-width: 290px;
-  padding-top: 3 px;
+  max-height: 255px;
+  max-width: 255px;
+  margin-top: 3px;
 }
 
 .scrolled-offset {
@@ -1150,38 +1150,9 @@ section {
 # Services
 --------------------------------------------------------------*/
 
-/* 
-.services{
-background-color: black;
-}
-
-#services .member {
-  text-align: center;
-}
-
-#services .image {
-  /* width: 100%; 
-  max-width: 350px; 
-  height: 100%; 
-  margin-bottom: 7px; */
-
-  /* display: block;
-  width: 100%;
-  height: auto;
-  font-size: 13px;
-  line-height: normal;
-  transition: opacity .6s ease;
-   
-} */
-
-/* #services .row {
-  justify-content: space-around; 
-} */ 
-
-
 .services {
   background-color: black;
-  padding: 20px; /* Adjust padding as needed */
+  padding: 20px; 
 }
 
 #services .row {
@@ -1212,18 +1183,50 @@ background-color: black;
 
 #services .row {
   justify-content: space-around;
-  margin-top: 20px; /* Adjust the margin as needed */
+  margin-top: 20px; 
 }
 
 #services .section-title p{
   font-size: 20px;
+  color: white;
 }
 
 #services .member h4{
   padding-top: 10px;
-  /* font-weight: bold; */
-
+  
 }
+
+#services .member{
+  color: white;
+}
+
+#services .text-start .text{
+  display:none;
+  }
+  
+
+  .btn-container{
+    
+    padding: 3px;
+    height:48px;
+    width:130px;
+   
+  }
+
+  button{
+    user-select:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    cursor:pointer;
+    border:none;
+    padding:3px;
+    font: size 16px;
+    background:linear-gradient(141deg, #66a346 0%, #66a346 51%, #66a346 75%);
+    color:white;
+    
+    box-sizing:border-box;
+  }
 
 .services .icon-box {
   text-align: center;
@@ -1243,6 +1246,7 @@ background-color: black;
   transition: ease-in-out 0.3s;
   position: relative;
 }
+
 
 .services .icon-box .icon i {
   font-size: 36px;
