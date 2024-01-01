@@ -265,41 +265,6 @@
     }
   });
 
-  
-    // $("#toggle").click(function() {
-    //   var elem = $("#toggle").text();
-    //   if (elem == "Read More") {
-    //     //Stuff to do when btn is in the read more state
-    //     $("#toggle").text("Read Less");
-    //     $("#text").slideDown();
-    //   } else {
-    //     //Stuff to do when btn is in the read less state
-    //     $("#toggle").text("Read More");
-    //     $("#text").slideUp();
-    //   }
-    // });
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-      // Add a click event listener to all buttons with the class "toggle"
-      document.querySelectorAll(".toggle").forEach(function (button) {
-        button.addEventListener("click", function () {
-          var elem = button.textContent;
-          var textElement = button.parentElement.previousElementSibling.querySelector(".text");
-    
-          if (elem == "Read More") {
-            // Stuff to do when the button is in the read more state
-            button.textContent = "Read Less";
-            textElement.style.display = "block";
-          } else {
-            // Stuff to do when the button is in the read less state
-            button.textContent = "Read More";
-            textElement.style.display = "none";
-          }
-        });
-      });
-    });
-
 })();
 
 

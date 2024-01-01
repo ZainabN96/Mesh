@@ -1205,34 +1205,12 @@ section {
   }
   
 
-  .btn-container{
-    
-    padding: 3px;
-    height:48px;
-    width:130px;
-   
-  }
-
-  button{
-    user-select:none;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    cursor:pointer;
-    border:none;
-    padding:3px;
-    font: size 16px;
-    background:linear-gradient(141deg, #66a346 0%, #66a346 51%, #66a346 75%);
-    color:white;
-    
-    box-sizing:border-box;
-  }
 
 .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: white;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
 }
 
