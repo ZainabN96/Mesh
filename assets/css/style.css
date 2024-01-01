@@ -14,14 +14,13 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-
-a {
+ a {
   text-decoration: none;
-  color: #66a346;
-}
+   color: #66a346; 
+} 
 
 a:hover {
-  color: #80c792;
+   color: #80c792; 
   text-decoration: none;
 }
 
@@ -432,7 +431,8 @@ b, .para{
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  height: 70px;
+  height: 117px;
+  
 }
 
 #header.header-scrolled {
@@ -440,13 +440,14 @@ b, .para{
 }
 
 #header .logo {
-  font-size: 30px;
+  font-size: 30px; 
   margin: 0;
   padding: 0;
-  line-height: 1;
+   line-height: 1;
   font-weight: 700;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  text-transform: uppercase; 
+
 }
 
 #header .logo a {
@@ -456,12 +457,15 @@ b, .para{
 
 #header .logo img {
   /* max-height: 40px; */
-  max-height: 150px;
-  max-width: 150px;
+  max-height: 290px;
+  max-width: 290px;
+  padding-top: 3 px;
 }
 
 .scrolled-offset {
+
   margin-top: 70px;
+
 }
 
 /*--------------------------------------------------------------
@@ -598,11 +602,12 @@ b, .para{
 */
 .mobile-nav-toggle {
   color: #222222;
-  font-size: 35px;
+  font-size: 48px;
   cursor: pointer;
   display: none;
   line-height: 0;
   transition: 0.5s;
+
 }
 
 .mobile-nav-toggle.bi-x {
@@ -921,16 +926,17 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 52px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: white;
 }
 
 .section-title h2::before {
@@ -938,8 +944,8 @@ section {
   position: absolute;
   display: block;
   width: 120px;
-  height: 1px;
-  background: #ddd;
+  height: 2px;
+ 
   bottom: 1px;
   left: calc(50% - 60px);
 }
@@ -950,7 +956,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #66a346;
+ 
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -965,7 +971,8 @@ section {
 # Featured Services
 --------------------------------------------------------------*/
 .feature-font{
-  font-size: 25px;
+  font-size: 30px;
+  padding-left: 20px;
 }
 .featured-services {
   padding: 20px 0;
@@ -1046,14 +1053,23 @@ section {
 .about .pabout{
   font-size: 50px;
   padding-top: 40px;
+  padding-left: 15px;
 }
 .about .abouti{
   padding-left: 10px;
   padding-right: 10px;
+  color: white;
+}
+
+#about.about {
+  background-color: black;
 }
 
 .about .img1{
-  width: 1219px;
+  /* width: 1219px; */
+      width: 100%;
+       height: auto;
+
 }
 
 /*--------------------------------------------------------------
@@ -1133,6 +1149,82 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
+/* 
+.services{
+background-color: black;
+}
+
+#services .member {
+  text-align: center;
+}
+
+#services .image {
+  /* width: 100%; 
+  max-width: 350px; 
+  height: 100%; 
+  margin-bottom: 7px; */
+
+  /* display: block;
+  width: 100%;
+  height: auto;
+  font-size: 13px;
+  line-height: normal;
+  transition: opacity .6s ease;
+   
+} */
+
+/* #services .row {
+  justify-content: space-around; 
+} */ 
+
+
+.services {
+  background-color: black;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+#services .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+#services .member {
+  text-align: center;
+  flex: 4;
+  margin: 20px; /* adjust it to adjust the size of all members */
+}
+
+#services .image-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%; 
+}
+
+#services .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#services .row {
+  justify-content: space-around;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+#services .section-title p{
+  font-size: 20px;
+}
+
+#services .member h4{
+  padding-top: 10px;
+  /* font-weight: bold; */
+
+}
+
 .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
