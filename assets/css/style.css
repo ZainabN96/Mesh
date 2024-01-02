@@ -647,10 +647,10 @@ b, .para{
   display: block;
   position: absolute;
   top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  padding: 30px 0;
   /* background-color: #fff; */
   background-color: #66a346;
   overflow-y: auto;
@@ -662,10 +662,10 @@ b, .para{
   padding-top: 55px;
   /* color: #222222; */
   color: #fff;
-  font-size: 70px;
+  font-size: 80px;
   font-style: normal;
   position: relative;
-  margin-top: -10px;
+  margin-top: 0px;
   margin-bottom: 0px;
   display: inline-block;
   /* padding-bottom: 54px;
@@ -972,6 +972,7 @@ section {
 .featured-services {
   padding: 20px 0;
 }
+
 .featured-services .icon-box {
   padding: 20px;
 }
@@ -1011,7 +1012,6 @@ section {
 
 .feature{
   text-decoration-line: underline;
-
 }
 .image {
   width: 200px; /* Set a specific width */
@@ -1158,8 +1158,7 @@ section {
 #services .member {
   text-align: center;
   flex: 4;
-  margin: 80px; /* adjust it to adjust the size of all members */
-  font-size: 17px;;
+  margin: 20px; /* adjust it to adjust the size of all members */
 }
 
 #services .image-container {
@@ -1187,10 +1186,9 @@ section {
   color: white;
 }
 
-#services .member h3{
-  padding-top: 20px;
-  padding-bottom: 10px;
-  font-size: 32px;;
+#services .member h4{
+  padding-top: 10px;
+  
 }
 
 #services .member{
@@ -1201,6 +1199,7 @@ section {
   display:none;
   }
   
+
 
 .services .icon-box {
   text-align: center;
@@ -1591,67 +1590,37 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-
-.team .section-title h1{
-  font-size: 100px;
-  color: white;
-  margin: 2rem 0;
- text-align: center;
-
-}
-.team .section-title p{
-text-align: center;
-    color: white;
-    font-size: 19px;
-    padding-bottom: 5px;
-}
-
-
-.team {
+.team .member {
   text-align: center;
-  padding: 10px 100px;  
-  /* adjust padding to change the size of picture */
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
+  padding: 30px 20px;
+  background: #fff;
 }
 
-
-.team-images-container {
-  display: flex;
-  justify-content: space-between;
-  
-  
+.team .member img {
+  max-width: 60%;
+  /* border-radius: 50%; */
+  margin: 0 0 30px 0;
 }
 
-.team-member {
-  text-align: center !important;
-
-}
-
-.team-member img {
-  width: 100%;
-  max-width: 350px;
-  height: 350px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  
-}
-.team .mem{
-  margin-left: 80px;
-
-}
-
-
-.team h3 {
-  font-size: 30px;
-  color: white;
-  margin-bottom: 10px;
-  font-weight: bold;
-  letter-spacing: 3px;
-}
-
-.team h4 {
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
   font-size: 18px;
-  color: white;
-  letter-spacing: 2px;
+}
+
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.team .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #aaaaaa;
 }
 
 .team .member .social {
