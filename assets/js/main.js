@@ -290,27 +290,37 @@
 //   });
 // });
 
+// document.addEventListener("DOMContentLoaded", function() {
+//   const loaderContainer = document.getElementById('loader-container');
+
+//   // Show loader
+//   function showLoader() {
+//     loaderContainer.style.display = 'flex';
+//   }
+
+//   // Hide loader
+//   function hideLoader() {
+//     loaderContainer.style.display = 'none';
+//   }
+
+//   // Simulating loading time with setTimeout (remove this in a real application)
+//   // Call showLoader to display the loader
+//   showLoader();
+
+//   // Simulating some process that takes time
+//   setTimeout(() => {
+//     // After the process completes, call hideLoader to hide the loader
+//     hideLoader();
+//   }, 3000); // Simulated loading time in milliseconds
+// });
+
 document.addEventListener("DOMContentLoaded", function() {
-  const loaderContainer = document.getElementById('loader-container');
+  const loaderVideo = document.getElementById('loader-video');
+  const loaderContainer = document.querySelector('.loader-container');
 
-  // Show loader
-  function showLoader() {
-    loaderContainer.style.display = 'flex';
-  }
-
-  // Hide loader
-  function hideLoader() {
+  loaderVideo.addEventListener('loadedmetadata', function() {
     loaderContainer.style.display = 'none';
-  }
+  });
 
-  // Simulating loading time with setTimeout (remove this in a real application)
-  // Call showLoader to display the loader
-  showLoader();
-
-  // Simulating some process that takes time
-  setTimeout(() => {
-    // After the process completes, call hideLoader to hide the loader
-    hideLoader();
-  }, 3000); // Simulated loading time in milliseconds
+  loaderVideo.load();
 });
-
