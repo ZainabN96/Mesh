@@ -606,7 +606,7 @@ b, .para{
 
 .mobile-nav-toggle.bi-x {
   color: #000000;
-  font-size: 40px;
+  font-size: 60px;
 }
 .mobile-nav-toggle {
   display: block;
@@ -1046,8 +1046,7 @@ section {
 }
 
 .about .pabout{
-  font-size: 40px;
-  padding-top: 40px;
+  font-size: 38px;
   padding-left: 15px;
 }
 .about .abouti{
@@ -1200,8 +1199,13 @@ section {
   font-size: 17px;
 }
 
-  
+.services-heading-size{
+  font-size: 24px;
+}  
 
+.services-link-size{
+  font-size: 20px;
+}
 
 .services .icon-box {
   text-align: center;
